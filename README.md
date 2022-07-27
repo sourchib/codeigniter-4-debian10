@@ -24,7 +24,7 @@ Change file .env <br>
 Change connection database app/Config/Database.php <br>
 Change public/ .htaccess <br>
 <p>
-<IfModule mod_rewrite.c> <br>
+(IfModule mod_rewrite.c) <br>
         Options +FollowSymlinks <br>
         RewriteEngine On <br>
         RewriteBase / <br>
@@ -32,25 +32,25 @@ Change public/ .htaccess <br>
         RewriteCond %{REQUEST_FILENAME} !-d <br>
         RewriteCond $1 !^(index\.php|robots\.txt) <br>
         RewriteRule ^(.*)$ index.php?/$1 [L] <br>
-</IfModule mod_rewrite.c> <br>
+(/IfModule mod_rewrite.c) <br>
 </p>
 
 ## 4. Setup Apache2
 nano /etc/apache2/sites-available/code.conf
 <p>
-    <VirtualHost *:80> <br>
+    (VirtualHost *:80) <br>
     ServerName http://159.223.59.110 <br>
     ServerAlias www.namedomain.com <br>
     ServerAdmin webmaster@localhost <br>
     DocumentRoot /var/www/file/code/public <br>
     ErrorLog /var/log/apache2/codeigniter-error_log <br>
     CustomLog /var/log/apache2/codeigniter-access_log combined <br>
-    <Directory /var/www/file/code/public> <br>
+    (Directory /var/www/file/code/public) <br>
         Require all granted <br>
         Options FollowSymLinks <br>
         AllowOverride All <br>
-    </Directory> <br>
-</VirtualHost> <br>
+    (/Directory) <br>
+(/VirtualHost) <br>
 </p>
 a2enmod rewrite <br> 
 a2enssite code.conf <br>
