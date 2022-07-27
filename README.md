@@ -21,7 +21,7 @@ Create database name ci
 Change file .env
 Change connection database app/Config/Database.php
 Change public/ .htaccess
-<textarea>
+<p>
 <IfModule mod_rewrite.c>
         Options +FollowSymlinks
         RewriteEngine On
@@ -31,7 +31,7 @@ Change public/ .htaccess
         RewriteCond $1 !^(index\.php|robots\.txt)
         RewriteRule ^(.*)$ index.php?/$1 [L]
 </IfModule mod_rewrite.c>
-</textarea>
+</p>
 
 ## 4. Setup Apache2
 nano /etc/apache2/sites-available/code.conf
