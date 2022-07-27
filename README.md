@@ -35,7 +35,8 @@ Change public/ .htaccess
 
 ## 4. Setup Apache2
 nano /etc/apache2/sites-available/code.conf
-<VirtualHost *:80> <br>
+<p>
+    <VirtualHost *:80> <br>
     ServerName http://159.223.59.110 <br>
     ServerAlias www.namedomain.com <br>
     ServerAdmin webmaster@localhost <br>
@@ -48,9 +49,9 @@ nano /etc/apache2/sites-available/code.conf
         AllowOverride All <br>
     </Directory> <br>
 </VirtualHost> <br>
-
+</p>
 a2enmod rewrite
-/etc/init.d/apache2 restart
+sudo /etc/init.d/apache2 restart
 
 ## 5. Open Testing
 Open browser klik link url : http://ip_atau_nama_domain .
