@@ -50,8 +50,9 @@ nano /etc/apache2/sites-available/code.conf
     </Directory> <br>
 </VirtualHost> <br>
 </p>
-a2enmod rewrite
-sudo /etc/init.d/apache2 restart
+a2enmod rewrite <br> 
+a2enssite code.conf <br>
+sudo /etc/init.d/apache2 restart 
 
 ## 5. Open Testing
 Open browser klik link url : http://ip_atau_nama_domain .
