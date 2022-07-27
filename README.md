@@ -1,26 +1,28 @@
-# CodeIgniter 4 Login & Register
-CodeIgniter 4 Login &amp; Register Debian 10 and Ubuntu LAMP
-> 
-## 1. Setup Basic
-dpkg-reconfigure locales
-apt-get install ntp
-nano /etc/bash.bashrc
-timedatectl set-timezone Asia/Jakarta
-date
+# CodeIgniter 4 Login & Register 
+CodeIgniter 4 Login &amp; Register Debian 10 and Ubuntu LAMP  <br>
 
-## 2. Setup LAMP
-apt-get install apache2
-apt-get install php7.4- tab tab tab
-apt-get install mariadb-server
-mysql_secure_instalasion
-apt-get install phpmyadmin
+Doc instalasi codeIgniter new version : https://www.codeigniter.com/
 
-## 3. Setup CodeIgniter 4
-Download file git.
-Create database name ci
-Change file .env
-Change connection database app/Config/Database.php
-Change public/ .htaccess
+## 1. Setup Basic <br>
+dpkg-reconfigure locales <br>
+apt-get install ntp <br>
+nano /etc/bash.bashrc <br>
+timedatectl set-timezone Asia/Jakarta <br>
+date <br>
+
+## 2. Setup LAMP <br>
+apt-get install apache2 <br>
+apt-get install php7.4- tab tab tab <br>
+apt-get install mariadb-server <br>
+mysql_secure_instalasion <br>
+apt-get install phpmyadmin <br>
+
+## 3. Setup CodeIgniter 4 <br>
+Download file git. <br>
+Create database name ci <br>
+Change file .env <br>
+Change connection database app/Config/Database.php <br>
+Change public/ .htaccess <br>
 <p>
 <IfModule mod_rewrite.c> <br>
         Options +FollowSymlinks <br>
